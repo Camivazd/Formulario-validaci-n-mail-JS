@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Validación de Formulario con Javascript</title>
+	<!-- CSS -->
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+
+	<main>
+		<form action="" class="formulario" id="formulario">
+			<!-- Grupo: Nombre -->
+			<div class="formulario__grupo" id="grupo__nombre">
+				<label for="nombre" class="formulario__label">Nombre</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="nombre" id="nombre" required>
+                    <!-- required, es para que requiera si o si ese campo.-->
+				</div>
+			</div>
+
+			<!-- Grupo: Apellido -->
+			<div class="formulario__grupo" id="grupo__apellido">
+				<label for="apellido" class="formulario__label">Apellido</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="apellido" id="apellido" required>
+				</div>
+			</div>
+
+			<!-- Grupo: mail -->
+			<div class="formulario__grupo" id="grupo__mail">
+				<label for="mail" class="formulario__label">Mail</label>
+				<div class="formulario__grupo-input">
+					<input type="email" class="formulario__input" name="mail" id="mail" required>
+				</div>
+			</div>
+
+			<!-- Grupo: Cuidad-->
+			<div class="formulario__grupo" id="grupo__ciudad">
+				<label for="ciudad" class="formulario__label">Ciudad</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="ciudad" id="ciudad" required>
+				</div>
+			</div>
+
+			<!-- Grupo: Provincia-->
+			<div class="formulario__grupo" id="grupo__provincia">
+				<label for="provincia" class="formulario__label">Provincia</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="provincia" id="provincia" required>
+				</div>
+			</div>
+
+			<!-- Grupo: Comentarios -->
+			<div class="formulario__grupo" id="grupo__comentarios">
+                <label for="comentarios" class="formulario__label">Comentarios</label>
+				<div class="formulario__grupo-input">
+                    <textarea name="comentarios" id="comentarios" cols="50" rows="10" required></textarea>
+				</div>
+			</div>
+
+			<!-- Grupo: Terminos y Condiciones -->
+			<div class="formulario__grupo" id="grupo__terminos">
+				<label class="formulario__label">
+					<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos" required>
+					Acepto los Terminos y Condiciones
+				</label>
+			</div>
+
+            <!--Botón de Enviar -->
+            <div class="formulario__grupo formulario__grupo-btn-enviar">
+				<button type="submit" class="formulario__btn" id="boton">Enviar</button>
+			</div>
+		</form>
+
+		<div class="spinner" id="spinner" hidden>
+			<div class="bounce1"></div>
+			<div class="bounce2"></div>
+			<div class="bounce3"></div>
+		  </div>
+	</main>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
